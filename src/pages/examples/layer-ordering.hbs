@@ -27,13 +27,7 @@ layout: example.hbs
   // Panes are added to the map in order - this pane will be sit on top of 'neighborhoods'
   map.createPane('footprints');
 
-  L.esri.featureLayer({
-    url: buildingFootprintsUrl,
-    pane: 'footprints',
-    style: function (feature) {
-      return { color: 'white', weight: 0, fillOpacity: 1 };
-    }
-  }).addTo(map);
+
 
   map.createPane('blockpoints');
 
